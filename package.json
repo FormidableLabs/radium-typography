@@ -1,0 +1,55 @@
+{
+  "name": "radium-typography",
+  "version": "0.1.0",
+  "description": "Radium typography component. Includes utilities for text measurement.",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FormidableLabs/radium-typography.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FormidableLabs/radium-typography/issues"
+  },
+  "homepage": "https://github.com/FormidableLabs/radium-typography",
+  "scripts": {
+    "postinstall": "builder run npm:postinstall",
+    "preversion": "builder run npm:preversion",
+    "version": "builder run npm:version",
+    "test": "builder run npm:test"
+  },
+  "dependencies": {
+    "builder": "~2.4.0",
+    "builder-radium-component": "^0.2.5",
+    "lodash.initial": "^4.0.0",
+    "lodash.last": "^3.0.0",
+    "radium": "^0.16",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6"
+  },
+  "devDependencies": {
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-register": "^6.4.3",
+    "builder": "~2.4.0",
+    "builder-radium-component-dev": "^0.2.5",
+    "canvas": "^1.3.9",
+    "chai": "^3.2.0",
+    "escope": "3.3.0",
+    "mocha": "^2.3.3",
+    "react": "^0.14.6",
+    "react-addons-test-utils": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "author": "",
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2",
+      "react"
+    ]
+  }
+}
