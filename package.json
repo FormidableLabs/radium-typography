@@ -19,10 +19,16 @@
     "test": "builder run npm:test"
   },
   "dependencies": {
+    "babel-plugin-transform-runtime": "^6.4.3",
+    "babel-polyfill": "^6.3.14",
+    "babel-runtime": "^6.3.19",
     "builder": "~2.4.0",
-    "builder-radium-component": "^0.2.5",
+    "builder-radium-component": "^0.2.7",
+    "eslint-config-defaults": "^8.0.2",
+    "lodash.chunk": "^4.0.1",
     "lodash.initial": "^4.0.0",
     "lodash.last": "^3.0.0",
+    "lodash.range": "^3.1.1",
     "radium": "^0.16",
     "react": "^0.14.6",
     "react-dom": "^0.14.6"
@@ -32,10 +38,9 @@
     "babel-preset-es2015": "^6.3.13",
     "babel-register": "^6.4.3",
     "builder": "~2.4.0",
-    "builder-radium-component-dev": "^0.2.5",
+    "builder-radium-component-dev": "^0.2.7",
     "canvas": "^1.3.9",
     "chai": "^3.2.0",
-    "escope": "3.3.0",
     "mocha": "^2.3.3",
     "react": "^0.14.6",
     "react-addons-test-utils": "^0.14.6",
@@ -50,6 +55,13 @@
       "es2015",
       "stage-2",
       "react"
+    ],
+    "plugins": [
+      "syntax-class-properties",
+      "syntax-decorators",
+      "transform-class-properties",
+      "transform-decorators-legacy",
+      "transform-runtime"
     ]
   }
 }
